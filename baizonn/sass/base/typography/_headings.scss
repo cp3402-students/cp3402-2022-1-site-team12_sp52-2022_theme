@@ -4,5 +4,39 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
+  clear: both;
+}
+
+h1 {
+  color: $color__headings-primary;
+  font-size: 42px;
+}
+
+h2 {
+  color: $color__headings-primary;
+  font-size: 24pt;
+}
+
+h3 {
+  color: $color__headings-primary;
+  font-size: 18pt;
+}
+
+h4 {
+  color: $color__headings-primary;
+  font-size: 14pt;
+}
+
+h5 {
+  color: $color__headings-primary;
+  font-size: 12pt;
+}
+
+h6 {
+  color: $color__headings-primary;
+  font-size: 10pt;
+}
+
+.entry-title {
+  text-align: center;
 }
