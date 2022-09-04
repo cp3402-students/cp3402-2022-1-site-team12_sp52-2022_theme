@@ -550,7 +550,7 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%; }
+  width: 50%; }
   .main-navigation ul {
     display: none;
     list-style: none;
