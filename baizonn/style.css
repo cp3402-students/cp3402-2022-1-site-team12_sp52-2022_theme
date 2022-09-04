@@ -367,27 +367,19 @@ h6 {
 
 h1 {
   color: #138143;
-  font-size: 42px; }
+  font-size: 32pt; }
 
 h2 {
   color: #138143;
-  font-size: 24pt; }
+  font-size: 26pt; }
 
 h3 {
   color: #138143;
-  font-size: 18pt; }
+  font-size: 22pt; }
 
 h4 {
   color: #138143;
-  font-size: 14pt; }
-
-h5 {
-  color: #138143;
-  font-size: 12pt; }
-
-h6 {
-  color: #138143;
-  font-size: 10pt; }
+  font-size: 20pt; }
 
 .entry-title {
   text-align: center; }
@@ -489,7 +481,7 @@ table {
 a {
   color: #2070ae; }
   a:visited {
-    color: #800080; }
+    color: #2070ae; }
   a:hover, a:focus, a:active {
     color: #2070ae; }
   a:focus {
@@ -578,22 +570,31 @@ textarea {
 --------------------------------------------- */
 .main-navigation {
   display: block;
-  width: 100%; }
+  float: right;
+  position: absolute;
+  top: 42px;
+  right: 0; }
+  @media screen and (max-width: 480px) {
+    .main-navigation {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background-color: #fff;
+      padding: 8px; } }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    display: none; }
     .main-navigation ul ul {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
       top: 100%;
       left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
+      z-index: 99999;
+      width: 100%;
+      display: flex; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
         display: block;
@@ -605,6 +606,13 @@ textarea {
       left: auto; }
   .main-navigation li {
     position: relative; }
+    @media screen and (min-width: 480px) {
+      .main-navigation li {
+        padding: 16px; } }
+    .main-navigation li:hover > a,
+    .main-navigation li.focus > a {
+      background-color: #fff;
+      color: #000; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -613,6 +621,16 @@ textarea {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block; }
+  @media screen and (max-width: 480px) {
+    .menu-toggle,
+    .main-navigation.toggled ul {
+      animation-name: showList;
+      animation-duration: 1s; }
+    @keyframes showList {
+      from {
+        opacity: 0; }
+      to {
+        opacity: 1; } } }
 
 @media screen and (min-width: 37.5em) {
   .menu-toggle {
