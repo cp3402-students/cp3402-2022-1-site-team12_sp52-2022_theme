@@ -49,7 +49,8 @@ function baizonn_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'baizonn' ),
+			'menu-1' => esc_html__( 'Header', 'baizonn' ),
+			'social' => esc_html__( 'Social Media Menu', 'baizonn' ),
 		)
 	);
 
@@ -139,6 +140,7 @@ add_action( 'widgets_init', 'baizonn_widgets_init' );
  */
 function baizonn_scripts() {
 	wp_enqueue_style( 'baizonn-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'sass-style', get_template_directory_uri() . '/sass/style.css', array());
 	wp_style_add_data( 'baizonn-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'baizonn-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
