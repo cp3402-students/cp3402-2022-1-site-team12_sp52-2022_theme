@@ -21,10 +21,7 @@
 			?>
 		</a>
 		<span class="sep"> | </span>
-		<?php
-		/* translators: 1: Theme name, 2: Theme author. */
-		printf(esc_html__('Theme: %1$s by %2$s.', 'baizonn'), 'baizonn', '<a href="https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme">Team 12</a>');
-		?>
+		<a href="<?php echo esc_url( __('https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme', 'baizonn'));?>" target="_blank">baizonn</a>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
