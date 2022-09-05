@@ -73,3 +73,11 @@
     padding: 1em;
     color: $color__text-white;
 }
+.social-menu{
+    .menu-main-menu-container{
+        float: none;
+    }
+    h1{
+        margin:0;
+    }
+}

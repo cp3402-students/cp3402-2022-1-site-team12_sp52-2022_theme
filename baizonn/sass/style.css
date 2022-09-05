@@ -1066,6 +1066,13 @@ textarea {
   color: #fff;
 }
 
+.social-menu .menu-main-menu-container {
+  float: none;
+}
+.social-menu h1 {
+  margin: 0;
+}
+
 .header-image {
   max-height: 60vh;
   overflow: hidden;
