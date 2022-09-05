@@ -13,24 +13,9 @@
 ?>
 
 <footer id="colophon" class="site-footer">
-	<nav class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$baizonn_description = get_bloginfo( 'description', 'display' );
-			if ( $baizonn_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $baizonn_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-			</nav><!-- .site-branding -->
+	<nav>
+	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	</nav><!-- .footer-site-branding -->
 	<nav class="social-menu">
 	<?php
 			wp_nav_menu(
