@@ -534,6 +534,7 @@ img {
 
 figure {
   margin: 1em 0;
+  margin-top: 0;
 }
 
 table {
@@ -1063,4 +1064,99 @@ textarea {
   font-size: 0.8em;
   padding: 1em;
   color: #fff;
+}
+
+.header-image {
+  max-height: 60vh;
+  overflow: hidden;
+}
+.header-image img {
+  display: block;
+  width: 100vw;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.menu-main-menu-container {
+  float: right;
+}
+
+.site-header {
+  position: relative;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+}
+.site-header .site-branding {
+  min-height: 100px;
+  display: flex;
+}
+.site-header .site-branding .custom-logo-link {
+  margin-right: 1em;
+}
+.site-header .site-branding .custom-logo-link .custom-logo {
+  padding: 10px;
+  height: auto;
+  width: 200px;
+}
+.site-header .site-branding-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-header .site-branding-text .site-title {
+  font-size: 25px;
+  margin: 0;
+}
+.site-header .site-branding-text .site-title a {
+  text-decoration: none;
+}
+.site-header .site-branding-text .site-description {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+.site-header .site-branding-text .site-description a {
+  text-decoration: none;
+}
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 900;
+}
+.site-title a {
+  color: black;
+  text-decoration: none;
+}
+.site-title a:hover, .site-title a:focus {
+  text-decoration: underline;
+}
+
+.site-description {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  font-weight: 100;
+  font-style: italic;
+}
+
+@media screen and (min-width: 900px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .site-branding {
+    width: 35%;
+    flex: 1 0 auto;
+  }
+  .main-navigation {
+    width: 65%;
+  }
+}
+.menu-expand-icon {
+  width: 50px;
 }/*# sourceMappingURL=style.css.map */
