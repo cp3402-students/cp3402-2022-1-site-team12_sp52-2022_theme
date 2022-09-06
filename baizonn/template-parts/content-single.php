@@ -30,8 +30,9 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php baizonn_post_thumbnail(); ?>
+	
 	<section class="post-content">	
+	<?php baizonn_post_thumbnail(); ?>
 	<div class="entry-content">
 		<?php
 		the_content(
@@ -69,6 +70,6 @@
 		comments_template();
 	endif;
 	?>
-	</section>
+	</section> <!--post-content -->
 	<?php get_sidebar(); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

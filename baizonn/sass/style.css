@@ -736,10 +736,37 @@ blockquote, q {
 }
 
 .site-content {
-  max-width: 1080px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
+.entry-header, .post-content {
+  padding: 15px;
+}
+
+.post-thumbnail img {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+@media screen and (min-width: 900px) {
+  .has-sidebar .hentry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .has-sidebar .hentry .entry-header {
+    width: 100%;
+    flex: 1 0 100%;
+  }
+  .has-sidebar .hentry .post-content {
+    width: 60%;
+  }
+  .has-sidebar .hentry .widget-area {
+    width: 30%;
+  }
+}
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -936,6 +963,11 @@ blockquote, q {
 @media screen and (min-width: 900px) {
   .entry-title {
     font-size: 3.5em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .entry-title {
+    font-size: 2em;
   }
 }
 .entry-title a {
