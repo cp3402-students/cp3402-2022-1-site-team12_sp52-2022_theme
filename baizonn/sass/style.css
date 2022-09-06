@@ -545,13 +545,13 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #2070ae;
+  color: #138143;
 }
 a:visited {
-  color: #2070ae;
+  color: #138143;
 }
 a:hover, a:focus, a:active {
-  color: #2070ae;
+  color: #138143;
 }
 a:focus {
   outline: thin dotted;
@@ -588,6 +588,12 @@ input[type=reset]:focus,
 input[type=submit]:active,
 input[type=submit]:focus {
   border-color: #aaa #bbb #bbb;
+}
+
+.wpforms-submit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type=text],
@@ -638,6 +644,13 @@ textarea {
   width: 100%;
 }
 
+#wpforms-2000 .wpforms-field {
+  width: 50vw;
+}
+#wpforms-2000 .wpforms-field-container {
+  margin: auto;
+}
+
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
@@ -649,9 +662,7 @@ textarea {
 .main-navigation {
   display: block;
   float: right;
-  position: absolute;
-  top: 42px;
-  right: 0;
+  padding: 8px;
 }
 @media screen and (max-width: 480px) {
   .main-navigation {
@@ -667,44 +678,52 @@ textarea {
   margin: 0;
   padding-left: 0;
   display: none;
+  padding: 8px;
+  height: 70px;
 }
 .main-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-  float: left;
-  position: absolute;
-  top: 100%;
-  left: -999em;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
   z-index: 99999;
-  width: 100%;
-  display: flex;
-}
-.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
-  display: block;
-  left: auto;
 }
 .main-navigation ul ul a {
-  width: 200px;
+  color: #138143;
+  overflow: hidden;
+}
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+  color: color__text-screen;
+}
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {
+  color: #2070ae;
 }
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
   left: auto;
+  display: flex;
+  flex-direction: column;
 }
 .main-navigation li {
-  position: relative;
-}
-@media screen and (min-width: 480px) {
-  .main-navigation li {
-    padding: 16px;
-  }
+  display: block;
+  padding: 8px;
 }
 .main-navigation li:hover > a, .main-navigation li.focus > a {
-  background-color: #fff;
-  color: #000;
+  color: #2070ae;
 }
 .main-navigation a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
+.menu-main-menu-container > ul > li > a {
+  color: #138143;
+}
+.menu-main-menu-container > ul > li > a:hover, .menu-main-menu-container > ul > li > a:focus {
+  color: #2070ae;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -788,6 +807,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .page-links {
@@ -798,6 +819,24 @@ textarea {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.entry-content .wp-block-cover__inner-container h2 {
+  color: #fff;
+}
+.entry-content .wp-block-cover__inner-container div {
+  width: 90vw;
+}
+.entry-content p > select {
+  width: 100%;
+}
+
+.wp-block-timetable {
+  width: 100%;
+  margin: 0 auto;
+}
+.wp-block-timetable select {
+  margin: auto;
 }
 
 /* Comments
@@ -1094,6 +1133,9 @@ textarea {
   position: relative;
   font-family: "Dongle", sans-serif;
   font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .site-header .site-branding {
   min-height: 100px;
@@ -1153,12 +1195,11 @@ textarea {
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .site-branding {
     width: 35%;
-    flex: 1 0 auto;
   }
   .main-navigation {
     width: 65%;
