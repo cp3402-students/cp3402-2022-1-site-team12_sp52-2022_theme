@@ -97,18 +97,26 @@
 
 .comment-navigation,
 .posts-navigation,
-.post-navigation {
-    .site-main & {
-        margin: 0 0 1.5em;
-    }
-    .nav-links {
-        display: flex;
-    }
-    .nav-previous {
-        flex: 1 0 50%;
-    }
-    .nav-next {
-        text-align: end;
-        flex: 1 0 50%;
-    }
+.post-navigation,
+.paging-navigation {
+	padding: 2em 0;
+	font-family: $font__sans;
+	text-align: left;
+	overflow: hidden;
+	
+	a {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		padding: 1em;
+		// border: 1px solid hsl(0, 0%, 80%);
+		color: black;
+		
+		&:hover,
+		&:focus {
+            text-decoration: underline overline;
+            color:  $color__interactive;
+		}
+	}
+	
 }
