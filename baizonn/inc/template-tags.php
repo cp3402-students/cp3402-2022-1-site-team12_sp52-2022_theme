@@ -167,3 +167,12 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+function baizonn_post_navigation() {
+	the_post_navigation(
+		array(
+			'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'baizonn' ) . '</span> <span class="nav-title">%title</span>',
+			'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'baizonn' ) . '</span> <span class="nav-title">%title</span>',
+		)
+	);
+}

@@ -62,12 +62,7 @@
 		<?php baizonn_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 	<?php
-	the_post_navigation(
-		array(
-			'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'baizonn' ) . '</span> <span class="nav-title">%title</span>',
-			'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'baizonn' ) . '</span> <span class="nav-title">%title</span>',
-		)
-	);
+	baizonn_post_navigation();
 
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) :

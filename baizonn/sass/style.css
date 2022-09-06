@@ -843,26 +843,34 @@ blockquote, q {
     display: flex;
   }
 }
-.site-main .comment-navigation,
-.site-main .posts-navigation,
-.site-main .post-navigation {
-  margin: 0 0 1.5em;
+.comment-navigation,
+.posts-navigation,
+.post-navigation,
+.paging-navigation {
+  padding: 2em 0;
+  font-family: "Dongle", sans-serif;
+  text-align: left;
+  overflow: hidden;
 }
-.comment-navigation .nav-links,
-.posts-navigation .nav-links,
-.post-navigation .nav-links {
-  display: flex;
+.comment-navigation a,
+.posts-navigation a,
+.post-navigation a,
+.paging-navigation a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  padding: 1em;
+  color: black;
 }
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  flex: 1 0 50%;
-}
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  text-align: end;
-  flex: 1 0 50%;
+.comment-navigation a:hover, .comment-navigation a:focus,
+.posts-navigation a:hover,
+.posts-navigation a:focus,
+.post-navigation a:hover,
+.post-navigation a:focus,
+.paging-navigation a:hover,
+.paging-navigation a:focus {
+  text-decoration: underline overline;
+  color: #138143;
 }
 
 /* Posts and pages
