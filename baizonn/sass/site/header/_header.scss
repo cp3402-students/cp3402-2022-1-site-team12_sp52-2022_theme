@@ -17,6 +17,9 @@
   position: relative;
   font-family: $font__main;
   font-size: $font-size-base;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .site-branding {
     min-height: 100px;
     display: flex;
@@ -78,12 +81,11 @@
 @media screen and (min-width: $breakpoint__md) {
   .site-header {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   .site-branding {
     width: 35%;
-    flex: 1 0 auto;
   }
   .main-navigation {
     width: 65%;
