@@ -21,7 +21,12 @@ function baizonn_body_classes( $classes ) {
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
 	} else {
-		$classes[] = 'has-sidebar';
+		if(!is_page()) {
+			$classes[] = 'has-sidebar';
+		} else {
+			$classes[] = 'no-sidebar';
+		}
+		
 	}
 
 	return $classes;
