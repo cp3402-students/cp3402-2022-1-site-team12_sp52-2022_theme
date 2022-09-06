@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: baizonn
 Theme URI: https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme
@@ -401,6 +402,8 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0.75em;
+  margin-bottom: 0.25em;
   clear: both;
 }
 
@@ -422,6 +425,14 @@ h3 {
 h4 {
   color: #138143;
   font-size: 20pt;
+}
+
+h5 {
+  font-size: 18pt;
+}
+
+h6 {
+  font-size: 16pt;
 }
 
 .entry-title {
@@ -478,6 +489,24 @@ ins {
 
 big {
   font-size: 125%;
+}
+
+blockquote {
+  position: relative;
+  margin: 0 0 1em;
+  background: #eee;
+  padding: 1em 2em 0.5em 5em;
+  font-style: italic;
+}
+blockquote:before {
+  position: absolute;
+  top: -0.2em;
+  left: -0.13em;
+  content: "“";
+  font-family: "Dongle", sans-serif;
+  font-size: 12em;
+  line-height: 100%;
+  color: white;
 }
 
 /* Elements
@@ -538,8 +567,42 @@ figure {
 }
 
 table {
+  border-collapse: collapse;
   margin: 0 0 1.5em;
   width: 100%;
+}
+
+thread th {
+  border-bottom: 2px solid #bbb;
+  padding-bottom: 0.5em;
+}
+
+td,
+th {
+  vertical-align: top;
+}
+
+th {
+  padding: 0.4em;
+  text-align: left;
+}
+
+tr {
+  border-bottom: 1px solid #eee;
+}
+
+td {
+  padding: 0.4em;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
 }
 
 /* Links
@@ -558,6 +621,23 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
+}
+
+.page-content a,
+.entry-content a,
+.entry-summary a,
+.comment-content a {
+  text-decoration: none;
+  border-bottom: 3px solid #138143;
+}
+.page-content a:focus, .page-content a:hover,
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.comment-content a:focus,
+.comment-content a:hover {
+  color: #138143;
 }
 
 /* Forms
@@ -638,9 +718,27 @@ textarea {
   width: 100%;
 }
 
+blockquote, q {
+  quotes: "" "";
+}
+
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site-content {
+  padding: 1em;
+}
+@media screen and (min-width: 600px) {
+  .site-content {
+    padding: 2em;
+  }
+}
+
+.site-content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -798,6 +896,67 @@ textarea {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.hentry {
+  margin: 0 0 1.5em;
+}
+
+.entry-header {
+  font-family: "Dongle", sans-serif;
+}
+
+.cat-links {
+  font-size: 90%;
+  font-weight: 700;
+}
+.cat-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #138143;
+}
+.cat-links a:focus, .cat-links a:hover {
+  background-color: #138143;
+  color: white;
+}
+
+.entry-title {
+  margin: 0.125em 0 0.25em;
+  font-size: 2.5em;
+}
+@media screen and (min-width: 900px) {
+  .entry-title {
+    font-size: 3em;
+  }
+}
+.entry-title a {
+  text-decoration: none;
+  color: black;
+}
+.entry-title a:focus, .entry-title a:hover {
+  border-bottom: 5px solid #138143;
+}
+
+.entry-meta,
+.entry-footer {
+  font-size: 90%;
+}
+.entry-meta a,
+.entry-footer a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.entry-meta a:focus, .entry-meta a:hover,
+.entry-footer a:focus,
+.entry-footer a:hover {
+  color: black;
+  border-bottom: 3px solid #138143;
+}
+
+.byline::after {
+  content: "|";
+  margin: 0 0.5em;
 }
 
 /* Comments
