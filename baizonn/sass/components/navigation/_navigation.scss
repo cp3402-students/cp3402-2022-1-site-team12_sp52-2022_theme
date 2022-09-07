@@ -90,18 +90,43 @@
 
 /* Small menu. */
 
+.menu-toggle {
+  width: 100%;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block;
-  @media screen and (max-width: 480px) {
-    animation-name: showList;
-    animation-duration: 1s;
-    @keyframes showList {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
+  display: flex;
+  flex-direction: column;
+  // animation-name: showList;
+  // animation-duration: 1s;
+
+  // @keyframes showList {
+  //   from {
+  //     opacity: 0;
+  //   }
+  //   to {
+  //     opacity: 1;
+  //   }
+  // }
+}
+
+.menu-main-menu-container {
+  ul {
+    li {
+      z-index: 99999;
+      background-color: #fff;
+    }
+    .sub-menu {
+      display: none;
+    }
+
+    &:focus {
+      .sub-menu {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 100%;
       }
     }
   }
