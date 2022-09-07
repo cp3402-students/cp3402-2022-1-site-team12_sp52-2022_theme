@@ -29,14 +29,14 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php
+	<!-- <?php
 	if ( has_post_thumbnail() ) { ?>
 	<figure class="featured-image full-bleed">
 		<?php
 		the_post_thumbnail('baizonn-full-bleed');
 		?>
-	</figure><!-- .featured-image full-bleed -->
-	<?php } ?>
+	</figure>
+	<?php } ?> -->
 	
 	<section class="post-content">
 		
@@ -44,7 +44,7 @@
 		if ( !is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div class="post-content__wrap">
 			<div class="entry-meta">
-				<?php humescores_posted_on(); ?>
+				<?php baizonn_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<div class="post-content__body">
 		<?php
