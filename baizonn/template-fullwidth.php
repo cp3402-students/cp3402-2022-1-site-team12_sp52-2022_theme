@@ -1,5 +1,6 @@
 <?php
 /**
+ * The Template Name: Baizonn Full Width
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -34,5 +35,4 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

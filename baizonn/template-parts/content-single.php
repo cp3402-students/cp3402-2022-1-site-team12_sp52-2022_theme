@@ -29,6 +29,14 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	<!-- <?php
+	if ( has_post_thumbnail() ) { ?>
+	<figure class="featured-image full-bleed">
+		<?php
+		the_post_thumbnail('baizonn-full-bleed');
+		?>
+	</figure>
+	<?php } ?> -->
 	
 	<section class="post-content">
 		
@@ -36,13 +44,13 @@
 		if ( !is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div class="post-content__wrap">
 			<div class="entry-meta">
-				<?php humescores_posted_on(); ?>
+				<?php baizonn_posted_on(); ?>
 			</div><!-- .entry-meta -->
 			<div class="post-content__body">
 		<?php
 		endif; ?>
 
-	<?php baizonn_post_thumbnail(); ?>
+	
 	<div class="entry-content">
 		<?php
 		the_content(
@@ -81,12 +89,15 @@
 
 	<?php
 	baizonn_post_navigation();
-
+	if(!is_page_template("single-nosidebar.php")){
 	// If comments are open or we have at least one comment, load up the comment template.
 	if ( comments_open() || get_comments_number() ) :
 		comments_template();
 	endif;
 	?>
 	</section> <!--post-content -->
-	<?php get_sidebar(); ?>
+	<?php
+		get_sidebar(); 
+	}
+	?>
 </article><!-- #post-<?php the_ID(); ?> -->
