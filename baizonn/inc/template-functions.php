@@ -21,7 +21,7 @@ function baizonn_body_classes( $classes ) {
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
 	} else {
-		if(!is_page()) {
+		if(!is_page_template("template-fullwidth.php")) {
 			$classes[] = 'has-sidebar';
 		} else {
 			$classes[] = 'no-sidebar';
