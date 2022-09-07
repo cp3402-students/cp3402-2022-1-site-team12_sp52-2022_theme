@@ -90,25 +90,10 @@
 
 /* Small menu. */
 
-.menu-toggle {
-  width: 100%;
-}
-
 .menu-toggle,
 .main-navigation.toggled ul {
   display: flex;
   flex-direction: column;
-  // animation-name: showList;
-  // animation-duration: 1s;
-
-  // @keyframes showList {
-  //   from {
-  //     opacity: 0;
-  //   }
-  //   to {
-  //     opacity: 1;
-  //   }
-  // }
 }
 
 .menu-main-menu-container {

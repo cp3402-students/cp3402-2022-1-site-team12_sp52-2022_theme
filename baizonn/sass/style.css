@@ -725,10 +725,6 @@ textarea {
 }
 
 /* Small menu. */
-.menu-toggle {
-  width: 100%;
-}
-
 .menu-toggle,
 .main-navigation.toggled ul {
   display: flex;
@@ -815,6 +811,9 @@ textarea {
   max-width: fit-content;
 }
 
+.entry-content {
+  padding: 0.5em;
+}
 .entry-content .wp-block-cover__inner-container h2 {
   color: #fff;
 }
@@ -1131,9 +1130,15 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 900px) {
+  .site-header {
+    justify-content: space-between;
+  }
+}
 .site-header .site-branding {
-  min-height: 100px;
+  max-height: 100px;
   display: flex;
+  padding: 16px;
 }
 .site-header .site-branding .custom-logo-link {
   margin-right: 1em;
@@ -1147,6 +1152,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 16px;
 }
 .site-header .site-branding-text .site-title {
   font-size: 25px;
@@ -1189,8 +1195,6 @@ textarea {
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .site-branding {
     width: 35%;
@@ -1201,4 +1205,60 @@ textarea {
 }
 .menu-expand-icon {
   width: 50px;
+}
+
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+  width: 100%;
+}
+
+.has-small-font-size {
+  font-size: 1.5em !important;
+}
+
+.wp-block-cover__inner-container {
+  text-align: center;
+}
+.wp-block-cover__inner-container p {
+  text-align: center;
+}
+
+.wp-block-post-title a:hover {
+  color: #2070ae;
+}
+
+.wp-block-post-excerpt__more-link:hover {
+  color: #2070ae;
+}
+
+.has-cool-to-warm-spectrum-gradient-background {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.has-pale-ocean-gradient-background {
+  width: 100%;
+}
+
+div[class*=wp-container-] {
+  justify-content: center;
+  align-items: center;
+}
+div[class*=wp-container-] ul > li {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.wp-block-group__inner-container > ul > li {
+  box-shadow: none !important;
+}
+
+.wp-image-147 {
+  width: 400px;
+}
+
+.entry-content .wp-block-cover__inner-container div {
+  width: auto;
+}
+
+.wp-block-buttons {
+  padding: 16px;
 }/*# sourceMappingURL=style.css.map */
