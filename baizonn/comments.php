@@ -32,7 +32,7 @@ if ( post_password_required() ) {
 			if ( '1' === $baizonn_comment_count ) {
 				printf(
 					/* translators: 1: title. */
-					esc_html__( 'One comments;', 'baizonn' ),
+					esc_html__( 'One comments', 'baizonn' ),
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {

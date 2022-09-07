@@ -29,6 +29,14 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php
+	if ( has_post_thumbnail() ) { ?>
+	<figure class="featured-image full-bleed">
+		<?php
+		the_post_thumbnail('baizonn-full-bleed');
+		?>
+	</figure><!-- .featured-image full-bleed -->
+	<?php } ?>
 	
 	<section class="post-content">
 		
@@ -42,7 +50,7 @@
 		<?php
 		endif; ?>
 
-	<?php baizonn_post_thumbnail(); ?>
+	
 	<div class="entry-content">
 		<?php
 		the_content(
