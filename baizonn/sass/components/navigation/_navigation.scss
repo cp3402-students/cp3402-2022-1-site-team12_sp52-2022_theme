@@ -1,145 +1,122 @@
 .main-navigation {
-  display: block;
-  float: right;
-  padding: 8px;
-  @media screen and (max-width: 480px) {
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #fff;
-    padding: 8px;
-  }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    display: none;
-    padding: 8px;
-    height: 70px;
-
-    ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      display: none;
-      background-color: #fff;
-      overflow: hidden;
-      z-index: 99999;
-
-      li {
-        &:hover > ul,
-        &.focus > ul {
-        }
-      }
-
-      a {
-        color: $color__link;
-        overflow: hidden;
-      }
-
-      :hover > a,
-      .focus > a {
-        color: color__text-screen;
-      }
-
-      a:hover,
-      a.focus {
-        color: $color__text-screen;
-      }
-    }
-
-    li:hover > ul,
-    li.focus > ul {
-      left: auto;
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  li {
     display: block;
-    @media screen and (min-width: 480px) {
+    float: right;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    @media screen and (max-width: 480px) {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #fff;
+        padding: 8px;
     }
-
-    padding: 8px;
-
-    &:hover > a,
-    &.focus > a {
-      color: $color__text-screen;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+        display: none;
+        ul {
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            float: left;
+            position: absolute;
+            top: 100%;
+            left: -999em;
+            z-index: 99999;
+            width: 100%;
+            display: flex;
+            li {
+                &:hover>ul,
+                &.focus>ul {
+                    display: block;
+                    left: auto;
+                }
+            }
+            a {
+                width: 200px;
+            }
+             :hover>a,
+            .focus>a {}
+            a:hover,
+            a.focus {}
+        }
+        li:hover>ul,
+        li.focus>ul {
+            left: auto;
+        }
     }
-  }
-
-  a {
-    display: inline-block;
-    text-decoration: none;
-  }
-
-  .current_page_item > a,
-  .current-menu-item > a,
-  .current_page_ancestor > a,
-  .current-menu-ancestor > a {
-  }
+    li {
+        position: relative;
+        @media screen and (min-width: 480px) {
+            padding: 16px;
+        }
+        &:hover>a,
+        &.focus>a {
+            background-color: #fff;
+            color: #000;
+        }
+    }
+    a {
+        display: block;
+        text-decoration: none;
+    }
+    .current_page_item>a,
+    .current-menu-item>a,
+    .current_page_ancestor>a,
+    .current-menu-ancestor>a {}
 }
 
-.menu-main-menu-container > ul > li > a {
-  color: $color__link;
-
-  &:hover,
-  &:focus {
-    color: $color__text-screen;
-  }
-}
 
 /* Small menu. */
 
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.menu-main-menu-container {
-  ul {
-    li {
-      z-index: 99999;
-      background-color: #fff;
+    display: block;
+    @media screen and (max-width: 480px) {
+        animation-name: showList;
+        animation-duration: 1s;
+        @keyframes showList {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     }
-    .sub-menu {
-      display: none;
-    }
-
-    &:focus {
-      .sub-menu {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        left: 100%;
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-  .main-navigation ul {
-    display: flex;
-  }
+    .menu-toggle {
+        display: none;
+    }
+    .main-navigation ul {
+        display: flex;
+    }
 }
 
 .comment-navigation,
 .posts-navigation,
-.post-navigation {
-  .site-main & {
-    margin: 0 0 1.5em;
-  }
-  .nav-links {
-    display: flex;
-  }
-  .nav-previous {
-    flex: 1 0 50%;
-  }
-  .nav-next {
-    text-align: end;
-    flex: 1 0 50%;
-  }
+.post-navigation,
+.paging-navigation {
+	padding: 2em 0;
+	font-family: $font__sans;
+	text-align: left;
+	overflow: hidden;
+	
+	a {
+		display: block;
+		width: 100%;
+		text-decoration: none;
+		padding: 1em;
+		// border: 1px solid hsl(0, 0%, 80%);
+		color: black;
+		
+		&:hover,
+		&:focus {
+            text-decoration: underline overline;
+            color:  $color__interactive;
+		}
+	}
+	
 }
