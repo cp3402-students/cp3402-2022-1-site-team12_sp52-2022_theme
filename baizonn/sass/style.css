@@ -609,10 +609,10 @@ td:last-child {
 /* Links
 --------------------------------------------- */
 a {
-  color: #2070ae;
+  color: #3eda00;
 }
 a:visited {
-  color: #2070ae;
+  color: #3eda00;
 }
 a:hover, a:focus, a:active {
   color: #2070ae;
@@ -1768,4 +1768,73 @@ blockquote, q {
 }
 .menu-expand-icon {
   width: 50px;
+}
+
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+  width: 100%;
+}
+
+.wp-block-cover__inner-container {
+  text-align: center;
+}
+.wp-block-cover__inner-container p {
+  text-align: center;
+}
+
+.wp-block-post-title a:hover {
+  color: #2070ae;
+}
+
+.wp-block-post-excerpt__more-link:hover {
+  color: #2070ae;
+}
+
+.has-cool-to-warm-spectrum-gradient-background {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.has-pale-ocean-gradient-background {
+  width: 100%;
+}
+
+div[class*=wp-container-] {
+  justify-content: center;
+  align-items: center;
+}
+div[class*=wp-container-] ul > li {
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.wp-block-group__inner-container > ul > li {
+  box-shadow: none !important;
+}
+
+.wp-image-147 {
+  width: 400px;
+}
+
+.entry-content .wp-block-cover__inner-container div {
+  width: auto;
+}
+
+.wp-block-buttons {
+  padding: 16px;
+}
+
+.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+.wp-block-timetable {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+.wp-block-timetable select {
+  margin: auto;
+}
+
+.mptt-shortcode-table {
+  min-height: 2000px;
 }/*# sourceMappingURL=style.css.map */
