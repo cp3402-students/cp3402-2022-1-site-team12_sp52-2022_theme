@@ -568,6 +568,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+<<<<<<< HEAD
 .main-navigation {
   display: block;
   float: right;
@@ -616,6 +617,59 @@ textarea {
   .main-navigation a {
     display: block;
     text-decoration: none; }
+=======
+@media screen and (max-width: 480px) {
+  .main-navigation {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    padding: 8px; } }
+
+.main-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: none; }
+  .main-navigation ul:focus > .sub-menu,
+  .main-navigation ul:hover > .sub-menu,
+  .main-navigation ul:hover > li {
+    color: #2070ae; }
+  .main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 8px;
+    position: relative;
+    right: 10px;
+    overflow: hidden; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      display: block; }
+    .main-navigation ul ul li:hover,
+    .main-navigation ul ul li:hover > a {
+      color: #2070ae; }
+    .main-navigation ul ul a {
+      color: #138143;
+      overflow: hidden; }
+    .main-navigation ul ul :hover > a,
+    .main-navigation ul ul .focus > a {
+      color: color__text-screen; }
+    .main-navigation ul ul a:hover,
+    .main-navigation ul ul a.focus {
+      color: #2070ae; }
+
+.main-navigation li {
+  display: inline-block; }
+  .main-navigation li:hover > a,
+  .main-navigation li.focus > a {
+    color: red; }
+
+.main-navigation a {
+  display: inline-block;
+  text-decoration: none; }
+>>>>>>> 93e8da9 (Revert "complete temporary theme")
 
 /* Small menu. */
 .menu-toggle,
@@ -686,6 +740,24 @@ textarea {
   flex-direction: row;
   max-width: fit-content; }
 
+<<<<<<< HEAD
+=======
+.entry-content .wp-block-cover__inner-container h2 {
+  color: #fff; }
+
+.entry-content .wp-block-cover__inner-container div {
+  width: 90vw; }
+
+.entry-content p > select {
+  width: 100%; }
+
+.wp-block-timetable {
+  width: 100%;
+  margin: 0 auto; }
+  .wp-block-timetable select {
+    margin: auto; }
+
+>>>>>>> 93e8da9 (Revert "complete temporary theme")
 /* Comments
 --------------------------------------------- */
 .comment-content a {
@@ -846,4 +918,151 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em; }
+<<<<<<< HEAD
   
+=======
+
+/* Site
+--------------------------------------------- */
+/* footer
+--------------------------------------------- */
+.site-footer {
+  position: inherit;
+  padding: 1em;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  background-color: #148143;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; }
+  .site-footer a {
+    color: #fff;
+    text-decoration: none; }
+    .site-footer a:hover {
+      color: #fff;
+      text-decoration: underline; }
+
+.site-footer > nav {
+  width: 25%; }
+  .site-footer > nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  .site-footer > nav ul li a {
+    color: #fff;
+    text-decoration: none; }
+    .site-footer > nav ul li a:hover {
+      color: #fff;
+      text-decoration: underline;
+      font-size: 150%; }
+
+@media (max-width: 1024px) {
+  .site-footer > nav {
+    width: 33%; } }
+
+@media (max-width: 768px) {
+  .site-footer > nav {
+    width: 50%; } }
+
+@media (max-width: 500px) {
+  .site-footer > nav {
+    width: 100%; }
+    .site-footer > nav ul {
+      display: flex;
+      justify-content: center; }
+      .site-footer > nav ul a {
+        display: block;
+        padding: 5px 5px; } }
+
+.site-info {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 1em;
+  color: #fff; }
+
+.social-menu .menu-main-menu-container {
+  float: none; }
+
+.social-menu h1 {
+  margin: 0; }
+
+.header-image {
+  max-height: 60vh;
+  overflow: hidden; }
+  .header-image img {
+    display: block;
+    width: 100vw; }
+
+.site-navigation {
+  display: flex; }
+
+.menu-main-menu-container {
+  float: right; }
+
+.site-header {
+  position: relative;
+  font-family: "Dongle", sans-serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .site-header .site-branding {
+    min-height: 100px;
+    display: flex; }
+    .site-header .site-branding .custom-logo-link {
+      margin-right: 1em; }
+      .site-header .site-branding .custom-logo-link .custom-logo {
+        padding: 10px;
+        height: auto;
+        width: 200px; }
+  .site-header .site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .site-header .site-branding-text .site-title {
+      font-size: 25px;
+      margin: 0; }
+      .site-header .site-branding-text .site-title a {
+        text-decoration: none; }
+    .site-header .site-branding-text .site-description {
+      font-size: 25px;
+      font-weight: 400;
+      margin: 0; }
+      .site-header .site-branding-text .site-description a {
+        text-decoration: none; }
+
+.site-title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6em;
+  font-weight: 900; }
+  .site-title a {
+    color: black;
+    text-decoration: none; }
+    .site-title a:hover, .site-title a:focus {
+      text-decoration: underline; }
+
+.site-description {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9em;
+  font-weight: 100;
+  font-style: italic; }
+
+@media screen and (min-width: 900px) {
+  .site-header {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .site-branding {
+    width: 35%; }
+  .main-navigation {
+    width: 65%; } }
+
+.menu-expand-icon {
+  width: 50px; }
+>>>>>>> 93e8da9 (Revert "complete temporary theme")
