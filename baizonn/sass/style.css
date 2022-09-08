@@ -811,9 +811,12 @@ textarea {
   max-width: fit-content;
 }
 
+<<<<<<< HEAD
 .entry-content {
   padding: 0.5em;
 }
+=======
+>>>>>>> 14c4168 (working navigate)
 .entry-content .wp-block-cover__inner-container h2 {
   color: #fff;
 }
@@ -1131,11 +1134,6 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 900px) {
-  .site-header {
-    justify-content: space-between;
-  }
-}
 .site-header .site-branding {
   max-height: 100px;
   display: flex;
@@ -1196,6 +1194,8 @@ textarea {
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .site-branding {
     width: 35%;
