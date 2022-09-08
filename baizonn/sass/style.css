@@ -1083,6 +1083,7 @@ textarea {
   }
   .site-footer > nav ul {
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
   .site-footer > nav ul a {
