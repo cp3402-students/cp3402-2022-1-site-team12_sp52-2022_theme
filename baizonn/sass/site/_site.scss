@@ -2,7 +2,6 @@
 --------------------------------------------- */
 @import "footer/footer";
 @import "header/header";
-@import "form/form";
 
 .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
   width: 100%;
@@ -57,4 +56,22 @@ div[class*="wp-container-"] {
 
 .wp-block-buttons {
   padding: 16px;
+}
+
+.wpforms-field-medium {
+  max-width: 100% !important;
+}
+
+//wp timetable style
+.wp-block-timetable {
+  width: 100%;
+  margin: 0 auto;
+  padding:16px;
+  select {
+    margin: auto;
+  }
+}
+
+.mptt-shortcode-table {
+min-height: 2000px;
 }

@@ -1,5 +1,7 @@
 <?php
 /**
+ * The Template Name: Baizonn Post no side bar and comments
+ * Template Post Type: post
  * The template for displaying all single posts
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
