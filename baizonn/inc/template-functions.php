@@ -20,24 +20,6 @@ function baizonn_body_classes( $classes ) {
 	// Adds a class of no-sidebar when there is no sidebar present.
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
-	} else {
-		if(is_page_template("template-fullwidth.php")) {
-			$classes[] = 'no-sidebar';
-		} else {
-			// if(is_page_template("single-nosidebar.php")) {
-			// 	$classes[] = 'no-sidebar';
-			// } else{
-			// 	$classes[] = 'has-sidebar';
-			// }
-		
-			// $classes[] = 'has-sidebar';
-			if(is_page_template("single-nosidebar.php")) {
-				$classes[] = 'no-sidebar';
-			} else{
-				$classes[] = 'has-sidebar';
-			}
-
-		}
 	}
 
 	return $classes;
