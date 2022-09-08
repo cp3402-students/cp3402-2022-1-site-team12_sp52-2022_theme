@@ -1207,12 +1207,12 @@ textarea {
   width: 50px;
 }
 
-.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-  width: 100%;
+.wpforms-field-medium {
+  max-width: 100% !important;
 }
 
-.has-small-font-size {
-  font-size: 1.5em !important;
+.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+  width: 100%;
 }
 
 .wp-block-cover__inner-container {
