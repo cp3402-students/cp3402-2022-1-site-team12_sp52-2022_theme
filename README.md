@@ -12,6 +12,7 @@ This is assignment 2 of Team 12:
 Team working on theme:
 - Ung Ta Hoang Tuan
 - Nguyen Hoang Ba Han 
+- Nguyen Hoang Anh 
 
 
 Team working on post and page:
