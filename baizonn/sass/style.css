@@ -766,13 +766,15 @@ blockquote, q {
 .main-navigation {
   display: block;
   float: right;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   top: 42px;
   right: 0;
 }
 @media screen and (max-width: 480px) {
   .main-navigation {
-    position: absolute;
+    position: -webkit-sticky;
+    position: sticky;
     top: 50px;
     right: 0;
     padding: 8px;
@@ -803,15 +805,22 @@ blockquote, q {
 }
 .main-navigation li {
   position: relative;
-  border-bottom: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-}
-.main-navigation li:first-child {
-  border-left: 1px solid #e5e5e5;
 }
 @media screen and (min-width: 480px) {
   .main-navigation li {
     padding: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  .main-navigation li:not(:last-child) {
+    border-right: 1px solid #eee;
+  }
+  .main-navigation li:first-child {
+    border-left: 1px solid #eee;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main-navigation li:not(:last-child) {
+    border-bottom: 1px solid #eee;
   }
 }
 .main-navigation li:hover > a, .main-navigation li.focus > a {
@@ -1698,20 +1707,33 @@ blockquote, q {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 9999;
+  text-align: center;
 }
 
-.menu-main-menu-container {
-  float: right;
+@media screen and (min-width: 480px) {
+  .menu-main-menu-container {
+    float: right;
+  }
 }
 
 .site-header {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 32px;
   font-family: "Dongle", sans-serif;
   font-size: 25px;
+  background: #fff;
+  z-index: 9999;
+}
+@media screen and (max-width: 480px) {
+  .site-header {
+    top: 0;
+  }
 }
 .site-header .site-branding {
-  min-height: 100px;
   display: flex;
+  height: 71px;
 }
 .site-header .site-branding .custom-logo-link {
   margin-right: 1em;
@@ -1725,18 +1747,22 @@ blockquote, q {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1em;
 }
 .site-header .site-branding-text .site-title {
-  font-size: 25px;
+  font-size: 40px;
   margin: 0;
 }
 .site-header .site-branding-text .site-title a {
   text-decoration: none;
+  background: -webkit-linear-gradient(-45deg, #000000, #2070ae, #138143, #bce8cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .site-header .site-branding-text .site-description {
   font-size: 25px;
   font-weight: 400;
-  margin: 0;
+  margin-top: -25px;
 }
 .site-header .site-branding-text .site-description a {
   text-decoration: none;
@@ -1849,4 +1875,24 @@ div[class*=wp-container-] ul > li {
 
 .mptt-shortcode-table {
   min-height: 2000px;
+}
+
+@media screen and (min-width: 480px) {
+  div.wpforms-container-full {
+    width: 70%;
+  }
+}
+.wpforms-submit-container {
+  display: flex;
+  justify-content: center;
+}
+.wpforms-submit-container button[type=submit] {
+  border-radius: 8px;
+  border: none !important;
+  background-color: #138143 !important;
+  color: #fff !important;
+  width: 150px;
+}
+.wpforms-submit-container button[type=submit]:hover {
+  background-color: #2070ae !important;
 }/*# sourceMappingURL=style.css.map */

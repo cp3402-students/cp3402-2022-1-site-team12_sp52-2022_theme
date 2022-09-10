@@ -1,11 +1,11 @@
 .main-navigation {
   display: block;
   float: right;
-  position: absolute;
+  position: sticky;
   top: 42px;
   right: 0;
   @media screen and (max-width: 480px) {
-    position: absolute;
+    position: sticky;
     top: 50px;
     right: 0;
 
@@ -52,14 +52,25 @@
   }
   li {
     position: relative;
-    border-bottom: 1px solid #e5e5e5;
-    border-right: 1px solid #e5e5e5;
-    &:first-child {
-      border-left: 1px solid #e5e5e5;
-    }
+
     @media screen and (min-width: 480px) {
       padding: 16px;
+
+      border-bottom: 1px solid $color__border;
+      &:not(:last-child) {
+        border-right: 1px solid $color__border;
+      }
+
+      &:first-child {
+        border-left: 1px solid $color__border;
+      }
     }
+    @media screen and (max-width: 480px) {
+      &:not(:last-child) {
+        border-bottom: 1px solid $color__border;
+      }
+    }
+
     &:hover > a,
     &.focus > a {
       color: $color__text-screen;
