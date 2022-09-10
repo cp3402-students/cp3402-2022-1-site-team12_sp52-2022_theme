@@ -66,12 +66,33 @@ div[class*="wp-container-"] {
 .wp-block-timetable {
   width: 100%;
   margin: 0 auto;
-  padding:16px;
+  padding: 16px;
   select {
     margin: auto;
   }
 }
 
 .mptt-shortcode-table {
-min-height: 2000px;
+  min-height: 2000px;
+}
+
+@media screen and (min-width: 480px) {
+  div.wpforms-container-full {
+    width: 70%;
+  }
+}
+
+.wpforms-submit-container {
+  display: flex;
+  justify-content: center;
+  button[type="submit"] {
+    border-radius: 8px;
+    border: none !important;
+    background-color: $color__interactive !important;
+    color: $color__text-white !important;
+    width: 150px;
+    &:hover {
+      background-color: $color__text-screen !important;
+    }
+  }
 }
