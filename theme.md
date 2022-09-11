@@ -83,15 +83,50 @@ In dashboard of wp-admin, the user can customize some theme feature in Theme/Cus
 
 ## Design Decisions:
 
-Tuan hoac Han viet ho nhe  viet theo 2 cai links nay ne:
-https://github.com/cp3402-students/cp3402-2022-1-site-team02/blob/main/theme.md  
+In design decisions, our team will list down important factors in our own custom theme that make significant changes on our website content. Hence, the factors will included location and decision of their modification on. 
 
-https://github.com/cp3402-students/cp3402-2022-1-site-team01/blob/main/theme.md
+Structure:
+  Query
+   Our theme applied grid composition under structure for the query content.
+   To modify block query content in flex position, we add elements in _structure.scss:
+    $query__small: 600px;
+    $query__medium: 900px;
 
-Nói chung là chỗ này viết về font mình chọn là gì, mình muốn cái web nhìn ra sao, màu chọn là gì, các variables cho màu là gì, chọn màu từ đâu.
+Site:
+  In _site.scss, we modify some specific content in order to create a clear look for user such as header, footer and form. These are the basics yet important to most web content. It's our aim to allow users to have a clear view in our website even if it's only basic details.
+  
+  Header
+   In _header.scss, we ensure that the logo will always be on the left side. Meanwhile, menu bar will stand on the right to make more space for our content. Hence, the modify will become user-friendly and easy to approach:
+   .menu-main-menu-container {
+    float: right;
+  }
+  
+  Footer
+    All contents in footer will be separate in order under column of 3: logo - menu - social contact. This modify is added on _footer.scss:
+    .site-footer > nav {
+      width:25%;
+      ul {
+          list-style-type: none;
+          margin:0;
+          padding:0;
+      }
+  
+Typographhy:
+  Colour
+   Considering the main colour of the logo is blue and dark green. We follow these basic colours to keep the content being simmplified and easy to read. Hence, the contrast is not too high between these colour patterns.
+   These variables of colours are being modified in _color.scss:
+      $color__background-button
+      $color__text-screen
+      $color__link-hover
+      $color__headings-primary
+  
+  Font
+    For Baizonn website, we apply font Lekton from Google Fonts are our main fonts for the whole content. This font tend to be user-friendly and fairly look from users experience.
+    
+    These variables of fonts are being modified in _typography.scss:
+        $font__main
+        $font__code
+        $font__pre
+        $font__sans
 
-Cái goal khi chọn cái design này là gì. 
-For example:
-- keep to the colour and typography scheme. Our colour scheme is a deep red on black and our primary font is Futura. We want the site to look modern but have a mature and slightly romantic feel to it.
-- Consider the target audience - we are trying to appeal to generally an older audience, so make sure text is easily readable, contrast is not too high, easy to understand and easy on the eyes.
-- Consider the goals of the site - the purpose of the Jazz Townsville website is to draw users to sign up to the club and to provide information about the club and upcoming events. Our goal is to have 100 new members sign up via our online form by the end of 2022. In order for your work on the site to be effective in helping the Club, please keep the goal and purpose in mind.
+
