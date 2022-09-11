@@ -85,23 +85,23 @@ In dashboard of wp-admin, the user can customize some theme feature in Theme/Cus
 
 In design decisions, our team will list down important factors in our own custom theme that make significant changes on our website content. Hence, the factors will included location and decision of their modification on. 
 
-###Structure:
-  ##Query
+### Structure:
+  ## Query
    Our theme applied grid composition under structure for the query content.
    To modify block query content in flex position, we add elements in _structure.scss:
     $query__small: 600px;
     $query__medium: 900px;
 
-##Site:
+## Site:
   In _site.scss, we modify some specific content in order to create a clear look for user such as header, footer and form. These are the basics yet important to most web content. It's our aim to allow users to have a clear view in our website even if it's only basic details.
   
-  ##Header
+  ## Header
    In _header.scss, we ensure that the logo will always be on the left side. Meanwhile, menu bar will stand on the right to make more space for our content. Hence, the modify will become user-friendly and easy to approach:
    .menu-main-menu-container {
     float: right;
   }
   
-  ##Footer
+  ## Footer
     All contents in footer will be separate in order under column of 3: logo - menu - social contact. This modify is added on _footer.scss:
     .site-footer > nav {
       width:25%;
@@ -111,8 +111,8 @@ In design decisions, our team will list down important factors in our own custom
           padding:0;
       }
   
-##Typographhy:
-  ##Colour
+## Typographhy:
+  ## Colour
    Considering the main colour of the logo is blue and dark green. We follow these basic colours to keep the content being simmplified and easy to read. Hence, the contrast is not too high between these colour patterns.
    These variables of colours are being modified in _color.scss:
       $color__background-button
@@ -120,7 +120,7 @@ In design decisions, our team will list down important factors in our own custom
       $color__link-hover
       $color__headings-primary
   
-  ##Font
+  ## Font
     For Baizonn website, we apply font Lekton from Google Fonts are our main fonts for the whole content. This font tend to be user-friendly and fairly look from users experience.
     
     These variables of fonts are being modified in _typography.scss:
