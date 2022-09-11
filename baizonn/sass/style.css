@@ -1720,16 +1720,11 @@ blockquote, q {
 .site-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 32px;
+  top: 0px;
   font-family: "Dongle", sans-serif;
   font-size: 25px;
   background: #fff;
   z-index: 9999;
-}
-@media screen and (max-width: 480px) {
-  .site-header {
-    top: 0;
-  }
 }
 .site-header .site-branding {
   display: flex;
