@@ -21,15 +21,12 @@
 
 .site-header {
   position: sticky;
-  top: 32px;
+  top: 0px;
   font-family: $font__main;
   font-size: $font-size-base;
   background: #fff;
   z-index: 9999;
 
-  @media screen and (max-width: 480px) {
-    top: 0;
-  }
   .site-branding {
     display: flex;
     height: 71px;
