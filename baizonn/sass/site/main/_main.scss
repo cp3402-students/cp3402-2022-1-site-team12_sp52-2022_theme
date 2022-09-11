@@ -92,10 +92,28 @@ div[class*="wp-container-"] {
   }
 }
 
-div.wpforms-container-full .wpforms-form .wpforms-field-label {
-  font-size: 1em;
-}
+div.wpforms-container-full {
+  .wpforms-form {
+    .wpforms-title {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 900;
+      background: -webkit-linear-gradient(
+        -45deg,
+        #000000,
+        #2070ae,
+        #138143,
+        #bce8cc
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .wpforms-field-label {
+      font-size: 1em;
+    }
 
-div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
-  font-size: 0.85em;
+    .wpforms-field-sublabel {
+      font-size: 0.85em;
+    }
+  }
 }
