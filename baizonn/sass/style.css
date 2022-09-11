@@ -1890,4 +1890,12 @@ div[class*=wp-container-] ul > li {
 }
 .wpforms-submit-container button[type=submit]:hover {
   background-color: #2070ae !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-size: 1em;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+  font-size: 0.85em;
 }/*# sourceMappingURL=style.css.map */
