@@ -1890,4 +1890,19 @@ div[class*=wp-container-] ul > li {
 }
 .wpforms-submit-container button[type=submit]:hover {
   background-color: #2070ae !important;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 900;
+  background: -webkit-linear-gradient(-45deg, #000000, #2070ae, #138143, #bce8cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  font-size: 1em;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+  font-size: 0.85em;
 }/*# sourceMappingURL=style.css.map */
