@@ -92,7 +92,7 @@ In design decisions, our team will list down important factors in our own custom
     $query__small: 600px;
     $query__medium: 900px;
 
-## Site:
+### Site:
   In _site.scss, we modify some specific content in order to create a clear look for user such as header, footer and form. These are the basics yet important to most web content. It's our aim to allow users to have a clear view in our website even if it's only basic details.
   
   ## Header
@@ -111,7 +111,7 @@ In design decisions, our team will list down important factors in our own custom
           padding:0;
       }
   
-## Typographhy:
+### Typographhy:
   ## Colour
    Considering the main colour of the logo is blue and dark green. We follow these basic colours to keep the content being simmplified and easy to read. Hence, the contrast is not too high between these colour patterns.
    These variables of colours are being modified in _color.scss:
