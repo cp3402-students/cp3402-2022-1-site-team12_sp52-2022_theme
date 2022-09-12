@@ -101,7 +101,8 @@
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 900px) {
+    width: 100%;
     animation-name: showList;
     animation-duration: 1s;
     @keyframes showList {
