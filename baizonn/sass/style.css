@@ -1618,7 +1618,7 @@ blockquote, q {
 /* footer
 --------------------------------------------- */
 .site-footer {
-  position: inherit;
+  position: absolute;
   padding: 1em;
   font-family: "Dongle", sans-serif;
   font-size: 25px;
