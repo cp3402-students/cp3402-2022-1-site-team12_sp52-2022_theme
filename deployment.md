@@ -2,9 +2,21 @@
 Team 12 had utilized some programs, applications, and tools to faciliate the tehem development process and and move the theme changes to the development site, the staging site and the live site.
 
 ## Theme Development:
-### Visual Studio Code: plzzz someone update
-### UnderScore: (update for me)
-### Sass: (ai do tom tat cai nay dum voi)
+### Visual Studio Code:
+**[Visual Studio Code (VS)](https://code.visualstudio.com/)** is a simple yet effective source code editor. It has built-in support for JS, TS, and Node.js, as well as a robust community of extensions for additional languages and runtimes (such as PHP).
+
+To customize the theme, we used VS to code and review. VS is easy to use and friendly with user. Besides that, VS community also support some amazing extension which can help us to connect, collab and review code together.
+
+Our theme used lasted version of [underscores](https://underscores.me/) template. Therefore, to compile SCSS to CSS, we installed `node_modules` and type `npm run compile:css` in the terminal. To build the CSS quickly and automatically we use Visual Studio extension [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass)
+
+### UnderScore: 
+
+**[UnderScores](https://underscores.me/)** is the starter theme or blank WordPress template. It is suitable for the team to start to make the great theme because UnderScore provides full HTML, CSS, JS and PHP codes. In assignment 2, to save time to custom the theme, we added _sassify!_ options in advanced Options. Sassify provided a codebase SCSS which can compile to CSS, so we can customise the theme quickly and easily to understand.
+
+### Sass: 
+
+**[SASS](https://sass-lang.com/)** (syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SASS help our save time because we can store things like colors, font stacks, or any CSS value, which we believe we'll want to reuse. Sass uses the `$` symbol to make something a variable. For example, when we need to reuse the border color, we just declare `$color__border: #eee;` in `_colors.scss` file and `border-bottom: 1px solid $color__border;` in `_navigation.scss` file.
+
 ### XAMPP: 
 The Apache HTTP Server, MariaDB database, and interpreters for PHP scripts are the primary components of the Apache Friends-created XAMPP, a free and open-source cross-platform web server solution stack. Therefore, XAMPP provides every condition to run the WordPress site locall. After customizing theme, the developers can run the WordPress site locally on XAMPP to see the changes on the site.
 ### Docker:
@@ -33,11 +45,19 @@ By install the WordPress image above, we have used Bitnami to install necessary 
 As mentioned above, we use this plugin for backup and migration tasks. After a WordPress Site is created on Azure Virtual Machine, we install this plugin, upload the backup and restore the site on the live site.
 
 ### Name.com
-Name.com is an ICANN accredited domain name registrar and web hosting company. We use it to get a domain for the staging and live site.
+**[Name.com](https://www.name.com/)** is an ICANN accredited domain name registrar and web hosting company. We use it to get a domain for the staging and live site.
 
 ## Project Management:
 
-AI DO GHI HO TOI CAI TROI OI CUU TOI.
+**[Github](https://github.com/)**:  GitHub is an open platform for developers, where we can share projects, code, applications and libraries. For assignment 2, our tutor suggests using the Github classroom, which is organized and managed by JCU. After joining [CP3402-student](https://github.com/cp3402-students), we created 2 repositories. 
+- Theme: [https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme](https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme)
+- Environment: [https://github.com/cp3402-students/cp3402-2022-1-env-team12_sp52-2022_env](https://github.com/cp3402-students/cp3402-2022-1-env-team12_sp52-2022_env)
+
+In the begin, we discuss that we will not work on the `main` branch directly. We make the new branch rules `name/task` to work the project and we will pull requests and let Tuan or Anh review before merging it to `main`. 
+
+**[Discord](https://discord.com/)**: Discord is familiar to us because we joined many servers of many subjects. It is a free platform to discuss and share a viewpoint. Discord also allow third-party bot from outside by webhook. In CP3402, we have joined the [general server](https://discord.gg/zCqr8wVy), and we also have generated [group 12 server](https://discord.gg/gS9zS2dp). In [trello-annoucement](https://discord.gg/5tWKzPZ5) channel, we added bot to notify [trello](https://trello.com/b/6mvDa4Vw/cms-sp52-22-group12) changes. 
+
+**[Trello](https://trello.com/)**:  Trello is a project and team management tool. Trello provides many components such as a card, list and checklist besides drag-and-drop activity. Therefore, it is easy to use with us, and easy to check by tutor. we planned all task before working in [Group12 board](https://trello.com/b/6mvDa4Vw/cms-sp52-22-group12). During the assignment, we writed the plan tasks, goals, and assigned person in `Backlog` list, updated tasks in `Sprint Backlog` and `In Progress`, and commpleted tasks in `Sprint - Complete` list. 
 
 ## Environment:
 
