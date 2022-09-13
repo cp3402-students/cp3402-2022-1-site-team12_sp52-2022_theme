@@ -132,8 +132,8 @@ As mention above, we create our WordPress site by WordPress image provided by Az
 ### Content development
 Updates on WordPress site must always be conducted on the dev server first (localhost or dev site) to avoid breaking the production site.
 1. Ater verifying all changes on the dev server, use the WPvivid plugin to create a backup file for the site.
-2. Uplaod the backup file to the Staging Site.
-3. After the Staging Site is approved and the customers want those changes appears on the production site., upload the backup files on the Production Site, and restore the site from the backup site. 
+2. Upload the backup file to the Live Site.
+3. To create or update a staging site, use Wp Staging plugin.
 
 
 
