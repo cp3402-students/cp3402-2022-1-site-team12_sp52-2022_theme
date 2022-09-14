@@ -9,7 +9,7 @@ Visual Studio Code is a streamlined code editor with support for development ope
 ### UnderScore: 
 Underscore is a starter theme backup for development theme. It provides basic codes as baselines for developer and allow them to have a save start from head start. Through Underscore, users can make changes through Sass and PHP files in order to create necessary changes on website content. 
 
-### Sass: (ai do tom tat cai nay dum voi)
+### Sass: 
 SASS can be known as an extension of CSS that enables you to use things like variables, nested rules, inline imports and more. SASS provides significant change on every variables of the content. Furthermore, SASS contains all the features of CSS and contains more features that are not present in CSS which makes it a good choice for developers to use it. SASS is full of advanced features. SASS offers variables, you can shorten your code by using variables. It is a great advantage over conventional CSS.
 ### XAMPP: 
 The Apache HTTP Server, MariaDB database, and interpreters for PHP scripts are the primary components of the Apache Friends-created XAMPP, a free and open-source cross-platform web server solution stack. Therefore, XAMPP provides every condition to run the WordPress site local. After customizing theme, the developers can run the WordPress site locally on XAMPP to see the changes on the site.
