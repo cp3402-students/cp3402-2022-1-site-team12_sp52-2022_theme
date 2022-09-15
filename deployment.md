@@ -1,5 +1,5 @@
 # Group 12: Deployment Sumary
-Team 12 had utilized some programs, applications, and tools to faciliate the tehem development process and and move the theme changes to the development site, the staging site and the live site.
+Team 12 had utilized some programs, applications, and tools to faciliate the theme development process and and move the theme changes to the development site, the staging site and the live site.
 
 ## Theme Development:
 
