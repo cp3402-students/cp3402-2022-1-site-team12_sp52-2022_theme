@@ -43,7 +43,18 @@ Name.com is an ICANN accredited domain name registrar and web hosting company. W
 
 ## Project Management:
 
-AI DO GHI HO TOI CAI TROI OI CUU TOI.
+### Github:  
+GitHub is an open platform for developers, where we can share projects, code, applications and libraries. For assignment 2, our tutor suggests using the Github classroom, which is organized and managed by JCU. After joining [CP3402-student](https://github.com/cp3402-students), we created 2 repositories. 
+- Theme: [https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme](https://github.com/cp3402-students/cp3402-2022-1-site-team12_theme)
+- Environment: [https://github.com/cp3402-students/cp3402-2022-1-env-team12_sp52-2022_env](https://github.com/cp3402-students/cp3402-2022-1-env-team12_sp52-2022_env)
+
+In the begin, we discuss that we will not work on the `main` branch directly. We make the new branch rules `name/task` to work the project and we will pull requests and let Tuan or Anh review before merging it to `main`. 
+
+### Discord: 
+Discord is familiar to us because we joined many servers of many subjects. It is a free platform to discuss and share a viewpoint. Discord also allow third-party bot from outside by webhook. In CP3402, we have joined the [general server](https://discord.gg/zCqr8wVy), and we also have generated [group 12 server](https://discord.gg/gS9zS2dp). In [trello-annoucement](https://discord.gg/5tWKzPZ5) channel, we added bot to notify [trello](https://trello.com/b/6mvDa4Vw/cms-sp52-22-group12) changes. 
+
+### Trello:  
+Trello is a project and team management tool. Trello provides many components such as a card, list and checklist besides drag-and-drop activity. Therefore, it is easy to use with us, and easy to check by tutor. we planned all task before working in [Group12 board](https://trello.com/b/6mvDa4Vw/cms-sp52-22-group12). During the assignment, we writed the plan tasks, goals, and assigned person in `Backlog` list, updated tasks in `Sprint Backlog` and `In Progress`, and commpleted tasks in `Sprint - Complete` list. 
 
 ## Environment:
 
@@ -71,7 +82,7 @@ AI DO GHI HO TOI CAI TROI OI CUU TOI.
 #### Get content 
 If the developer wants to use the content of Baizonn site:
 1. Install WPvivid plugin on the site
-2. Get the backup files (2 files) from _________________ (update later)
+2. Get the staging site via [https://group12baizonn.centralindia.cloudapp.azure.com/](https://group12baizonn.centralindia.cloudapp.azure.com/)
 3. upload the backfile in WPvivid tab, and restore the side
 4. RE-login the site by the admin account of Baizonn site.
 
